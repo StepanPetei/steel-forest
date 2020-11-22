@@ -63,6 +63,12 @@ nav ul li a:hover {
   margin: auto;
   margin-right: 60px;
 }
+.lang__socials .lang #ua {
+  color: #97222e;
+}
+.lang__socials .lang #ru {
+  color: #c9c8c8;
+}
 .lang__socials .socials {
   display: flex;
   justify-content: space-between;
@@ -202,4 +208,142 @@ nav ul li a:hover {
   padding: 5px 49px;
   border: none;
   border-radius: 5px;
+}
+
+#portfolio {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-width: 33.3333333333%;
+  -moz-column-width: 33.3333333333%;
+  column-width: 33.3333333333%;
+}
+
+.tile {
+  transition: all 350ms ease;
+}
+.tile:hover .overlay {
+  display: block !important;
+}
+.tile .hov a {
+  text-decoration: none;
+  color: white;
+}
+.tile img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.hov {
+  display: block !important;
+}
+
+.scale-anm {
+  transform: scale(1);
+}
+
+.btn {
+  font-size: 2rem;
+  font-weight: normal;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  line-height: normal;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  height: auto;
+  border: 2px solid;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  color: #989fa1;
+  background-color: rgba(0, 0, 0, 0);
+}
+.btn:hover {
+  text-decoration: none;
+  border-color: #e7495d;
+  color: #e7495d;
+}
+.btn:focus {
+  outline: none;
+  border-color: var(--darken-2);
+  box-shadow: 0 0 0 3px var(--darken-3);
+  color: #e7495d;
+}
+
+.toolbar.mb2.mt2 {
+  text-align: center;
+  padding: 10px 0;
+}
+.toolbar.mb2.mt2::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.toolbar .btn:focus {
+  outline: none;
+}
+
+footer {
+  position: relative;
+}
+
+#service {
+  position: absolute;
+  top: 100px;
+  left: 16.125%;
+  width: 66%;
+  height: auto;
+  line-height: 35px;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  text-align: center;
+  border: none;
+  background-color: #f3f3f3;
+  box-shadow: 0px 0px 5px 1px #888888;
+}
+#service #delivery,
+#service #payment {
+  margin: 25px;
+  width: 41%;
+}
+#service #delivery h3,
+#service #payment h3 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+}
+#service #delivery p,
+#service #payment p {
+  text-align: left;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+#footer_bg {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+}
+
+#contacts {
+  position: absolute;
+  top: 450px;
+  left: 310px;
+  width: 66%;
+  color: #e5e5e5;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+#contacts div {
+  width: 33.3%;
+}
+#contacts p {
+  font-size: 30px;
+  font-weight: 300;
+}
+#contacts #socials__footer img {
+  margin: 0 15px;
 }
