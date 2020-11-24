@@ -1,0 +1,29 @@
+@media screen and (max-width: 1235px) {
+  #ru {
+    color: #97222e;
+  }
+  .socials {
+    color: #97222e;
+  }
+}
+
+// Bootstrap breakpoint for PC
+@media screen and (min-width: 1200px) {}
+
+@media screen and (max-width: 1040px) {
+  :root {
+    font-size: calc(16px-1vw);
+  }
+}
+
+// Bootstrap breakpoint for tablets in album orientation
+@media screen and (min-width: 992px) {}
+
+// Bootstrap breakpoint for tablets in portrait orientation and fablets in album orientation
+@media screen and (min-width: 768px) {}
+
+// Bootstrap breakpoint for fablets in portrait orientation
+@media screen and (min-width: 576px) {}
+
+// Bootstrap breakpoint for fablets in portrait orientation
+@media screen and (max-width: 575px) {}

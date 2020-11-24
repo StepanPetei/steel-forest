@@ -33,7 +33,7 @@
 /* control styles */
 .slider__control {
   position: absolute;
-  top: 110%;
+  top: 50%;
   align-items: center;
   justify-content: center;
   width: 40px;
@@ -71,14 +71,6 @@
   height: 20px;
   background: transparent no-repeat center center;
   background-size: 100% 100%;
-}
-
-.slider__control_prev::before {
-  background-image: url(../img/larrow.svg);
-}
-
-.slider__control_next::before {
-  background-image: url(../img/rarrow.svg);
 }
 
 /* styles for indicators */

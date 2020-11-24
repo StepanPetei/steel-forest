@@ -1,0 +1,14 @@
+@media screen and (max-width: 1235px) {
+  #ru {
+    color: #97222e;
+  }
+
+  .socials {
+    color: #97222e;
+  }
+}
+@media screen and (max-width: 1040px) {
+  :root {
+    font-size: calc(16px-1vw);
+  }
+}

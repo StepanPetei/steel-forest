@@ -2,6 +2,7 @@ $colorText0: #231f20;
 $colorText1: #97222e;
 $colorBg0  : #e5e5e5;
 
+// general style for fonts
 :root {
   font-size: 16px;
 }
@@ -28,6 +29,7 @@ header {
   position: relative;
   z-index : 1;
 
+  //background styles
   #bg {
     object-fit: cover;
     width     : 100%;
@@ -43,6 +45,7 @@ header {
   }
 }
 
+//navigation styles
 nav {
   color      : $colorText0;
   font-size  : 1.5em;
@@ -65,16 +68,20 @@ nav {
   }
 }
 
-.lang__socials {
+#lang__socials {
   display        : flex;
+  flex-direction : row;
   justify-content: space-between;
 
-  .lang {
-    margin      : auto;
-    margin-right: 40px;
+  #lang {
+    display       : flex;
+    flex-direction: row;
+    margin        : auto;
+    margin-right  : 40px;
 
     #ua {
-      color: $colorText1
+      color : $colorText1;
+      margin: 0 10px;
     }
 
     #ru {
@@ -93,6 +100,7 @@ nav {
   }
 }
 
+// header styles
 .hero {
   display        : flex;
   justify-content: space-between;
@@ -131,11 +139,13 @@ nav {
   }
 
   .comode img {
-    width      : 100%;
+    width: 100%;
   }
 }
 
-//form for contact
+//styles for slider in slider.scss
+
+//form for contact form
 
 #contact-us {
   position        : relative;
@@ -201,7 +211,7 @@ nav {
 }
 
 
-#portfolio {
+#imgs {
   background-color    : #f3f3f3;
   -webkit-column-count: 3;
   -moz-column-count   : 3;
@@ -350,8 +360,4 @@ footer {
   }
 }
 
-@media (max-width: 1040px & screen) {
-  :root {
-    font-size: calc(16px-1vw);
-  }
-}
+// mediaqueries for layout adapting in mediaqueries.scss

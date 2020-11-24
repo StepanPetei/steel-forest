@@ -34,7 +34,7 @@
 /* control styles */
 .slider__control {
   position          : absolute;
-  top               : 110%;
+  top               : 50%;
   // display        : none;
   align-items       : center;
   justify-content   : center;
@@ -75,13 +75,13 @@
   background-size: 100% 100%;
 }
 
-.slider__control_prev::before {
-  background-image: url(../img/larrow.svg);
-}
+// .slider__control_prev::before {
+//   background-image: url(../img/larrow.svg);
+// }
 
-.slider__control_next::before {
-  background-image: url(../img/rarrow.svg);
-}
+// .slider__control_next::before {
+//   background-image: url(../img/rarrow.svg);
+// }
 
 /* styles for indicators */
 .slider__indicators {

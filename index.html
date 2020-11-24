@@ -2,9 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
-    <meta name="description" content="" />
+    <title>Steel Forest Workshop</title>
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -21,7 +19,8 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./styles/dist/main.css" />
-    <link rel="stylesheet" href="./styles/dist/slider.css">
+    <link rel="stylesheet" href="./styles/dist/mediaqueries.css" />
+    <link rel="stylesheet" href="./styles/dist/slider.css" />
   </head>
 
   <body>
@@ -56,19 +55,17 @@
               <a href="#contacts">КОНТАКТИ</a>
             </li>
           </ul>
-          <div class="lang__socials">
-            <div class="lang">
-              <ul class="navbar-nav">
-                <li><a href="#" id="ua">UA</a></li>
-                <li><a href="#" id="ru">RU</a></li>
-              </ul>
+          <div id="lang__socials">
+            <div id="lang">
+              <a href="#" id="ua">UA</a>
+              <a href="#" id="ru">RU</a>
             </div>
-            <a href="facebook.com" class="socials">
-              <img src="./img/fb.svg" alt="" />
-            </a>
-            <a href="instagram.com" class="socials">
-              <img src="./img/inst.svg" alt="" />
-            </a>
+            <a href="facebook.com" class="socials"
+              ><img src="./img/fb.svg" alt=""
+            /></a>
+            <a href="instagram.com" class="socials"
+              ><img src="./img/inst.svg" alt=""
+            /></a>
           </div>
         </div>
       </nav>
@@ -112,8 +109,15 @@
             </div>
           </div>
         </div>
-        <a class="slider__control slider__control_prev" href="#" role="button"></a>
-        <a class="slider__control slider__control_next" href="#" role="button"></a>
+        <a class="slider__control slider__control_prev" href="#" role="button"
+          ><img src="./img/larrow.svg" alt=""
+        /></a>
+        <a
+          class="slider__control slider__control_next"
+          href="#"
+          role="button"
+        ><img src="./img/rarrow.svg" alt=""
+        /></a>
       </div>
     </header>
 
@@ -146,7 +150,7 @@
             <button class="btn fil-cat" data-rel="barbecues">Мангали</button>
           </div>
         </div>
-        <div id="portfolio" class="row">
+        <div id="imgs" class="row">
           <div class="tile scale-anm col-sm-4">
             <a href="#" target="_blank"><img src="./img/desk1.png" alt="" /></a>
           </div>
