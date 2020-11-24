@@ -2,6 +2,10 @@ $colorText0: #231f20;
 $colorText1: #97222e;
 $colorBg0  : #e5e5e5;
 
+:root {
+  font-size: 16px;
+}
+
 * {
   margin          : 0;
   padding         : 0;
@@ -9,6 +13,7 @@ $colorBg0  : #e5e5e5;
   background-color: $colorBg0;
   background      : transparent;
   font-family     : "Oswald", sans-serif;
+  scroll-behavior : smooth;
 }
 
 body {
@@ -19,49 +24,41 @@ body {
 //header
 
 header {
-  display: block;
+  display : block;
+  position: relative;
+  z-index : 1;
 
   #bg {
     object-fit: cover;
     width     : 100%;
-    height    : auto;
+    height    : 100%;
     min-height: 100vh;
     overflow  : hidden;
 
     position: absolute;
     top     : 0;
     left    : 0;
-
-    z-index: -1;
+    bottom  : 0;
+    z-index : 0;
   }
 }
 
 nav {
-  display        : flex;
-  justify-content: space-between;
-  color          : $colorText0;
-  font-size      : 24px;
-  font-weight    : 400;
-  position       : relative;
-  z-index        : 10;
-  margin         : 0 50px;
+  color      : $colorText0;
+  font-size  : 1.5em;
+  font-weight: 400;
+  z-index    : 10;
 
   ul {
-    list-style: none;
-    display   : flex;
-    margin    : 20px auto;
-    right     : 0px;
-    top       : 0px;
-
     li {
       margin: 0 10px;
 
       a {
-        text-decoration: none;
-        color          : $colorText0;
+        color: $colorText0;
 
         &:hover {
-          color: $colorText1;
+          text-decoration: none;
+          color          : $colorText1;
         }
       }
     }
@@ -74,7 +71,7 @@ nav {
 
   .lang {
     margin      : auto;
-    margin-right: 60px;
+    margin-right: 40px;
 
     #ua {
       color: $colorText1
@@ -88,8 +85,7 @@ nav {
   .socials {
     display        : flex;
     justify-content: space-between;
-    margin         : auto 10px;
-
+    margin         : 10px;
   }
 
   a {
@@ -100,112 +96,52 @@ nav {
 .hero {
   display        : flex;
   justify-content: space-between;
-  width          : 100%;
   min-height     : 100vh;
-  overflow       : hidden;
   position       : relative;
   z-index        : 1;
+  padding        : 50px 0;
 
   .text {
-    position : relative;
-    top      : 30%;
-    left     : 5%;
-    transform: translate(-5%, 35%);
-
-    width: 460px;
+    margin-top  : 10vw;
+    padding-left: 50px;
 
     h1 {
-      font-size  : 48px;
+      font-size  : 3em;
       font-weight: 400;
-      /* main */
       color      : $colorText0;
     }
 
     button {
-      width : 240px;
-      height: 60px;
-      border: none;
-
+      width        : 240px;
+      height       : 60px;
+      border       : none;
       background   : $colorText1;
       border-radius: 5px;
+      color        : $colorBg0;
+      font-weight  : lighter;
+      font-size    : 1.5em;
+      margin-top   : 42px;
+      cursor       : pointer;
 
-      display        : flex;
-      align-items    : center;
-      justify-content: center;
-
-      color: $colorBg0;
-
-      font-weight: lighter;
-      font-size  : 24px;
-
-      margin-top: 42px;
-
-      cursor: pointer;
+      a {
+        text-decoration: none;
+        color          : $colorBg0;
+      }
     }
   }
 
-  .comode {
-    width      : 60vw;
-    position   : absolute;
-    top        : 5%;
-    right      : 5%;
-    //transform: translate(0%, -15%);
-  }
-}
-
-.slider {
-  position: relative;
-  width   : 100%;
-  height  : 400px;
-
-  overflow: hidden;
-
-  .prevArrow,
-  .nextArrow {
-    width : 40px;
-    height: 40px;
-
-    background: black;
-
-    position: absolute;
-    top     : 50%;
-
-    transform: translate(-50%, 0);
-  }
-
-  .prevArrow {
-    left: 20px;
-  }
-
-  .nextArrow {
-    right: 20px;
-  }
-
-
-  .content {
-    width : max-content;
-    height: 200px;
-    width : max-content;
-
-    display        : flex;
-    align-items    : center;
-    justify-content: center;
-
-    .slide {
-      width : 200px;
-      height: 200px;
-      margin: 200px;
-    }
+  .comode img {
+    width      : 100%;
   }
 }
 
 //form for contact
 
 #contact-us {
-  display         : block;
   position        : relative;
+  z-index         : 0;
+  padding         : 0px auto;
   background-color: #f3f3f3;
-  margin          : 50px auto;
 
   form {
     text-align: center;
@@ -215,14 +151,14 @@ nav {
     color     : $colorText0;
     display   : block;
     height    : 100%;
-    margin    : 40px auto;
+    margin    : 70px auto;
     padding   : 15px 20px;
     position  : relative;
     width     : 40%;
     z-index   : 2;
 
     h3 {
-      font-size  : 24px;
+      font-size  : 1.5em;
       font-weight: 500;
       color      : $colorText1;
     }
@@ -235,7 +171,7 @@ nav {
       box-sizing      : border-box;
       color           : $colorText0;
       display         : block;
-      font-size       : 24px;
+      font-size       : 1.5em;
       font-weight     : 300;
       height          : 65px;
       margin          : 20px auto;
@@ -251,51 +187,48 @@ nav {
     button {
       background-color: #231F20;
       color           : $colorBg0;
-      font-size       : 24px;
+      font-size       : 1.5em;
       padding         : 5px 49px;
       border          : none;
       border-radius   : 5px;
-
     }
   }
 }
 
 //gallery
+#gallery {
+  background-color: #f3f3f3;
+}
+
 
 #portfolio {
+  background-color    : #f3f3f3;
   -webkit-column-count: 3;
   -moz-column-count   : 3;
   column-count        : 3;
+  -webkit-column-gap  : 0;
+  -moz-column-gap     : 0;
+  column-gap          : 0;
   -webkit-column-width: 33.33333333333333%;
   -moz-column-width   : 33.33333333333333%;
   column-width        : 33.33333333333333%;
 }
 
-.tile {
-  transition: all 350ms ease;
-
-  &:hover {
-    .overlay {
-      display: block !important;
-    }
-  }
-
-  .hov {
-    a {
-      text-decoration: none;
-      color          : white;
-    }
-  }
-
-  img {
-    max-width: 100%;
-    width    : 100%;
-    height   : auto;
-  }
+.toolbar {
+  align-content: center;
+  padding      : 0 auto;
 }
 
-.hov {
-  display: block !important;
+.tile {
+  transition     : all 350ms ease;
+  border-collapse: collapse;
+  margin         : 0;
+  padding        : 0;
+
+  img {
+    width : 100%;
+    height: 100%;
+  }
 }
 
 .scale-anm {
@@ -303,38 +236,39 @@ nav {
 }
 
 .btn {
-  font-size         : 2rem;
+  font-size         : 1.5em;
   font-weight       : normal;
   text-decoration   : none;
   cursor            : pointer;
   display           : inline-block;
   line-height       : normal;
   padding           : .5rem 1rem;
-  margin            : 0;
+  margin            : 0 1.5rem;
   height            : auto;
-  border            : 2px solid;
+  border            : none;
+  border-bottom     : 2px solid transparent;
+  border-radius     : 0;
   vertical-align    : middle;
   -webkit-appearance: none;
-  color             : #989fa1;
+  color             : $colorText0;
   background-color  : rgba(0, 0, 0, 0);
 
   &:hover {
     text-decoration: none;
-    border-color   : #e7495d;
-    color          : #e7495d;
-  }
-
-  &:focus {
-    outline     : none;
-    border-color: var(--darken-2);
-    box-shadow  : 0 0 0 3px var(--darken-3);
-    color       : #e7495d;
+    border-bottom  : 2px solid $colorText1;
+    color          : $colorText1;
   }
 }
 
-.toolbar.mb2.mt2 {
+.toolbar {
   text-align: center;
   padding   : 10px 0;
+
+  .btn {
+    &:focus {
+      outline: none;
+    }
+  }
 
   &::-moz-focus-inner {
     border : 0;
@@ -342,66 +276,59 @@ nav {
   }
 }
 
-.toolbar {
-  .btn {
-    &:focus {
-      outline: none;
-    }
-  }
-}
-
 //footer
 
 footer {
-  position: relative;
+  position        : relative;
+  background-color: #e5e5e5;
 }
 
 #service {
-  position        : absolute;
-  top             : 100px;
-  left            : 16.125%;
-  width           : 66%;
+  margin-top      : 10%;
+  position        : relative;
+  z-index         : 1;
   height          : auto;
   line-height     : 35px;
-  display         : flex;
-  justify-content : space-between;
   padding         : 25px;
   text-align      : center;
   border          : none;
-  background-color: #f3f3f3;
+  background-color: #e5e5e5;
   box-shadow      : 0px 0px 5px 1px #888888;
 
   #delivery,
   #payment {
-    margin: 25px;
-    width : 41%;
 
     h3 {
       text-align : center;
-      font-size  : 30px;
+      font-size  : 1.875em;
       font-weight: 400;
     }
 
     p {
       text-align : left;
-      font-size  : 24px;
+      font-size  : 1.5em;
       font-weight: 300;
     }
   }
 }
 
 #footer_bg {
-  position: absolute;
-  z-index : -1;
-  width   : 100%;
+  object-fit: cover;
+  width     : 100%;
+  height    : 100%;
+  min-height: 100vh;
+  overflow  : hidden;
 
+  position: absolute;
+  top     : 0;
+  left    : 0;
+  z-index : 0;
 }
 
 #contacts {
-  position       : absolute;
-  top            : 450px;
-  left           : 310px;
-  width          : 66%;
+  margin-top     : 5%;
+  position       : relative;
+  z-index        : 1;
   color          : $colorBg0;
   display        : flex;
   justify-content: space-between;
@@ -412,13 +339,19 @@ footer {
   }
 
   p {
-    font-size  : 30px;
+    font-size  : 1.875em;
     font-weight: 300;
   }
 
-  #socials__footer{
+  #socials__footer {
     img {
       margin: 0 15px;
     }
+  }
+}
+
+@media (max-width: 1040px & screen) {
+  :root {
+    font-size: calc(16px-1vw);
   }
 }
