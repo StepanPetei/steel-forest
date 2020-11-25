@@ -63,12 +63,15 @@ nav ul li a:hover {
   margin: auto;
   margin-right: 40px;
 }
-#lang__socials #lang #ua {
+#lang__socials #lang .active {
   color: #97222e;
+}
+#lang__socials #lang a {
+  color: #c9c8c8;
   margin: 0 10px;
 }
-#lang__socials #lang #ru {
-  color: #c9c8c8;
+#lang__socials #lang a:hover {
+  color: #97222e;
 }
 #lang__socials .socials {
   display: flex;

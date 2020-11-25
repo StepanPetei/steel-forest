@@ -1,0 +1,47 @@
+@media screen and (max-width: 1232px) {
+  #lang__socials #lang a#ru {
+    color: #231f20;
+  }
+  #lang__socials #lang a#ru .active {
+    color: #97222e;
+  }
+  #lang__socials #lang a#ru:hover {
+    color: #97222e;
+  }
+}
+@media screen and (max-width: 1317px) {
+  #lang__socials #lang a#ua {
+    color: #231f20;
+  }
+  #lang__socials #lang a#ua .active {
+    color: #97222e;
+  }
+  #lang__socials #lang a#ua:hover {
+    color: #97222e;
+  }
+}
+@media screen and (max-width: 1040px) {
+  :root {
+    font-size: calc(16px-1vw);
+  }
+
+  nav ul li {
+    margin: 0 5px;
+  }
+
+  #lang__socials #lang {
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .navbar-nav {
+    align-items: center;
+  }
+
+  #lang__socials #lang {
+    margin: 0 auto;
+  }
+  #lang__socials .socials {
+    display: none;
+  }
+}

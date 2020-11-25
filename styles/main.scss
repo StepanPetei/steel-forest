@@ -78,16 +78,20 @@ nav {
     flex-direction: row;
     margin        : auto;
     margin-right  : 40px;
-
-    #ua {
-      color : $colorText1;
-      margin: 0 10px;
+    .active {
+      color: #97222e;
     }
 
-    #ru {
-      color: #c9c8c8;
+    a {
+      color : #c9c8c8;
+      margin: 0 10px;
+
+      &:hover {
+        color: #97222e;
+      }
     }
   }
+
 
   .socials {
     display        : flex;

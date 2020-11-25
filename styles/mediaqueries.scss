@@ -1,9 +1,24 @@
-@media screen and (max-width: 1235px) {
-  #ru {
-    color: #97222e;
+@media screen and (max-width: 1232px) {
+  #lang__socials #lang a#ru {
+    color: #231f20;
+    .active {
+      color: #97222e;
+    }
+    &:hover {
+      color: #97222e;
+    }
   }
-  .socials {
-    color: #97222e;
+}
+
+@media screen and (max-width: 1317px) {
+  #lang__socials #lang a#ua {
+    color: #231f20;
+    .active {
+      color: #97222e;
+    }
+     &:hover {
+      color: #97222e;
+    }
   }
 }
 
@@ -14,10 +29,38 @@
   :root {
     font-size: calc(16px-1vw);
   }
+
+  nav {
+    ul li {
+      margin: 0 5px;
+    }
+  }
+
+  #lang__socials {
+    #lang {
+      margin-right: 20px;
+    }
+  }
 }
 
 // Bootstrap breakpoint for tablets in album orientation
 @media screen and (min-width: 992px) {}
+
+@media screen and (max-width: 992px) {
+  .navbar-nav {
+    align-items: center;
+  }
+
+  #lang__socials {
+    #lang {
+      margin: 0 auto;
+    }
+
+    .socials {
+      display: none;
+    }
+  }
+}
 
 // Bootstrap breakpoint for tablets in portrait orientation and fablets in album orientation
 @media screen and (min-width: 768px) {}
