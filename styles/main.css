@@ -1,4 +1,10 @@
 :root {
+  --ratio: 1.2;
+  --ms0: 1;
+  --ms1: var(--ratio);
+  /* 1.2   */
+  --ms2: calc(var(--ratio) * var(--ms1));
+  /* 1.44  */
   font-size: 16px;
 }
 
@@ -85,7 +91,7 @@ nav ul li a:hover {
 .hero {
   display: flex;
   justify-content: space-between;
-  min-height: 100vh;
+  min-height: 80vh;
   position: relative;
   z-index: 1;
   padding: 50px 0;
@@ -126,6 +132,7 @@ nav ul li a:hover {
   background-color: #f3f3f3;
 }
 #contact-us form {
+  height: 40vh !important;
   text-align: center;
   border: none;
   box-shadow: 0px 0px 10px 0px #888888;
@@ -155,9 +162,7 @@ nav ul li a:hover {
   font-size: 1.5em;
   font-weight: 300;
   height: 65px;
-  margin: 20px auto;
   padding-left: 17px;
-  position: relative;
   width: 100%;
 }
 #contact-us form input [placeholder] {
@@ -167,9 +172,11 @@ nav ul li a:hover {
   background-color: #231F20;
   color: #e5e5e5;
   font-size: 1.5em;
-  padding: 5px 49px;
+  padding: 7px 18px;
   border: none;
   border-radius: 5px;
+  width: 38.5%;
+  align-self: center;
 }
 
 #gallery {
@@ -178,20 +185,8 @@ nav ul li a:hover {
 
 #imgs {
   background-color: #f3f3f3;
-  -webkit-column-count: 3;
-  -moz-column-count: 3;
-  column-count: 3;
-  -webkit-column-gap: 0;
-  -moz-column-gap: 0;
-  column-gap: 0;
-  -webkit-column-width: 33.3333333333%;
-  -moz-column-width: 33.3333333333%;
-  column-width: 33.3333333333%;
-}
-
-.toolbar {
-  align-content: center;
-  padding: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 33.33333333%);
 }
 
 .tile {
@@ -209,7 +204,16 @@ nav ul li a:hover {
   transform: scale(1);
 }
 
-.btn {
+.toolbar {
+  text-align: center;
+  padding: 10px 0;
+}
+.toolbar::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.toolbar__btn {
   font-size: 1.5em;
   font-weight: normal;
   text-decoration: none;
@@ -227,22 +231,13 @@ nav ul li a:hover {
   color: #231f20;
   background-color: rgba(0, 0, 0, 0);
 }
-.btn:hover {
+.toolbar__btn:focus {
+  outline: none;
+}
+.toolbar__btn:hover {
   text-decoration: none;
   border-bottom: 2px solid #97222e;
   color: #97222e;
-}
-
-.toolbar {
-  text-align: center;
-  padding: 10px 0;
-}
-.toolbar .btn:focus {
-  outline: none;
-}
-.toolbar::-moz-focus-inner {
-  border: 0;
-  padding: 0;
 }
 
 footer {

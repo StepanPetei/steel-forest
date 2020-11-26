@@ -89,7 +89,7 @@
 /* styles for indicators */
 .slider__indicators {
   position: absolute;
-  top: 110%;
+  top: 95%;
   right: 0;
   bottom: 10px;
   left: 0;

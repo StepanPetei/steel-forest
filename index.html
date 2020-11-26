@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="./styles/mediaqueries.css" />
     <link rel="stylesheet" href="./styles/slider.css" />
+    <link rel="stylesheet" href="./styles/galleryslider.css" />
   </head>
 
   <body>
@@ -100,12 +101,12 @@
               <img src="/img/metal.png" alt="" />
             </div>
             <div class="slider__item">
-              <p>Скло</p>
-              <img src="/img/glass.png" alt="" />
+              <p>Натуральний камінь</p>
+              <img src="/img/stone.png" alt="" />
             </div>
             <div class="slider__item">
-              <p>Дерево</p>
-              <img src="/img/wood.png" alt="" />
+              <p>Нержавіюча сталь</p>
+              <img src="/img/steel.png" alt="" />
             </div>
           </div>
         </div>
@@ -128,7 +129,7 @@
           action="mailto:steelforestworkshop@gmail.com"
           method="post"
           enctype="text/plain"
-          class="col-12 col-sm-8 col-lg-6 col-xl-5 d-flex flex-column justify-content-center align-content-center justify-content-around mx-auto" style="height: 42.8vh;"
+          class="col-12 col-sm-8 col-lg-6 col-xl-5 d-flex flex-column justify-content-center align-content-center justify-content-around mx-auto"
         >
           <h3>Зв'язатися з нами</h3>
           <input type="text" name="name" placeholder="Ваше ім'я" />
@@ -138,37 +139,113 @@
       </div>
     </div>
 
-    <div class="container-fluid">
-      <div id="gallery">
-        <div id="toolbar" class="row">
-          <div class="mx-auto">
-            <button class="btn fil-cat" href="#" data-rel="desks">Столи</button>
-            <button class="btn fil-cat" data-rel="racks">Стелажі</button>
-            <button class="btn fil-cat" data-rel="consoles">Консолі</button>
-            <button class="btn fil-cat" data-rel="shelves">
-              Полиці для дрів
-            </button>
-            <button class="btn fil-cat" data-rel="barbecues">Мангали</button>
+    <div class="container-fluid gallerySlider" id="gallery">
+      <div class="toolbar gallery__slider__indicators">
+        <div class="indicator toolbar__btn" data-index="0">Столи</div>
+        <div class="indicator toolbar__btn" data-index="1">Стелажі</div>
+        <div class="indicator toolbar__btn" data-index="2">Консолі</div>
+        <div class="indicator toolbar__btn" data-index="3">Полиці для дрів</div>
+        <div class="indicator toolbar__btn" data-index="4">Мангали</div>
+      </div>
+      <div class="content">
+        <div class="slide">
+          <div class="imgContainer">
+            <img src="img/desk1.png" alt="" />
+          </div>
+          <div class="imgContainer">
+            <img src="img/desk2.png" alt="" />
+          </div>
+          <div class="imgContainer">
+            <img src="img/desk3.png" alt="" />
+          </div>
+          <div class="imgContainer">
+            <img src="img/desk4.png" alt="" />
+          </div>
+          <div class="imgContainer">
+            <img src="img/desk5.png" alt="" />
+          </div>
+          <div class="imgContainer">
+            <img src="img/desk6.png" alt="" />
           </div>
         </div>
-        <div id="imgs" class="row">
-          <div class="tile scale-anm col-sm-4">
-            <a href="#" target="_blank"><img src="./img/desk1.png" alt="" /></a>
+        <div class="slide">
+          <div class="imgContainer">
+            <img src="img/desk1.png" alt="" />
           </div>
-          <div class="tile scale-anm col-sm-4">
-            <a href="#" target="_blank"><img src="./img/desk2.png" alt="" /></a>
+          <div class="imgContainer">
+            <img src="img/desk2.png" alt="" />
           </div>
-          <div class="tile scale-anm col-sm-4">
-            <a href="#" target="_blank"><img src="./img/desk3.png" alt="" /></a>
+          <div class="imgContainer">
+            <img src="img/desk3.png" alt="" />
           </div>
-          <div class="tile scale-anm col-sm-4">
-            <a href="#" target="_blank"><img src="./img/desk4.png" alt="" /></a>
+          <div class="imgContainer">
+            <img src="img/desk4.png" alt="" />
           </div>
-          <div class="tile scale-anm col-sm-4">
-            <a href="#" target="_blank"><img src="./img/desk5.png" alt="" /></a>
+          <div class="imgContainer">
+            <img src="img/desk5.png" alt="" />
           </div>
-          <div class="tile scale-anm col-sm-4">
-            <a href="#" target="_blank"><img src="./img/desk6.png" alt="" /></a>
+          <div class="imgContainer">
+            <img src="img/desk6.png" alt="" />
+          </div>
+        </div>
+        <div class="slide">
+          <div class="imgContainer">
+            <img src="img/desk1.png" alt="" />
+          </div>
+          <div class="imgContainer">
+            <img src="img/desk2.png" alt="" />
+          </div>
+          <div class="imgContainer">
+            <img src="img/desk3.png" alt="" />
+          </div>
+          <div class="imgContainer">
+            <img src="img/desk4.png" alt="" />
+          </div>
+          <div class="imgContainer">
+            <img src="img/desk5.png" alt="" />
+          </div>
+          <div class="imgContainer">
+            <img src="img/desk6.png" alt="" />
+          </div>
+        </div>
+        <div class="slide">
+          <div class="imgContainer">
+            <img src="img/desk1.png" alt="" />
+          </div>
+          <div class="imgContainer">
+            <img src="img/desk2.png" alt="" />
+          </div>
+          <div class="imgContainer">
+            <img src="img/desk3.png" alt="" />
+          </div>
+          <div class="imgContainer">
+            <img src="img/desk4.png" alt="" />
+          </div>
+          <div class="imgContainer">
+            <img src="img/desk5.png" alt="" />
+          </div>
+          <div class="imgContainer">
+            <img src="img/desk6.png" alt="" />
+          </div>
+        </div>
+        <div class="slide">
+          <div class="imgContainer">
+            <img src="img/desk1.png" alt="" />
+          </div>
+          <div class="imgContainer">
+            <img src="img/desk2.png" alt="" />
+          </div>
+          <div class="imgContainer">
+            <img src="img/desk3.png" alt="" />
+          </div>
+          <div class="imgContainer">
+            <img src="img/desk4.png" alt="" />
+          </div>
+          <div class="imgContainer">
+            <img src="img/desk5.png" alt="" />
+          </div>
+          <div class="imgContainer">
+            <img src="img/desk6.png" alt="" />
           </div>
         </div>
       </div>
@@ -196,9 +273,9 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-10 mx-auto" id="contacts">
-          <div id="messengers" class="col-12 col-md-4 mx-auto">
+      <div class="row d-flex flex-wrap">
+        <div class="col-10 d-flex flex-row flex-wrap mx-auto" id="contacts">
+          <div id="messengers" class="col col-md-4 mx-auto">
             <img src="./img/telegram.svg" alt="" />
             <img src="./img/viber.svg" alt="" />
             <p>
@@ -208,12 +285,12 @@
             </p>
           </div>
           <div class="w-100"></div>
-          <div id="email" class="col-12 col-md-4 mx-auto">
+          <div id="email" class="col col-md-4 mx-auto">
             <img src="./img/email.svg" alt="" />
             <p>steelforestworkshop<br />@gmail.com</p>
           </div>
           <div class="w-100"></div>
-          <div id="socials__footer" class="col-12 col-md-4 mx-auto">
+          <div id="socials__footer" class="col col-md-4 mx-auto">
             <img src="./img/fb__footer.svg" alt="" />
             <img src="./img/inst__footer.svg" alt="" />
           </div>
@@ -221,8 +298,8 @@
       </div>
     </footer>
 
-    <script src="/js/index.js" async defer></script>
-    <script src="/js/slider.js"></script>
+    <script src="scripts/js/slider.js"></script>
+    <script src="scripts/js/galleryslider.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
