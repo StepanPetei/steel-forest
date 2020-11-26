@@ -28,6 +28,30 @@ body {
   height  : 100%;
 }
 
+.scrollToTop {
+  position          : fixed;
+  bottom            : 60px;
+  right             : 50px;
+  border-radius     : 4px;
+  display           : block;
+  font-size         : 32px;
+  height            : 50px;
+  width             : 50px;
+  z-index           : 100;
+  -webkit-transition: all .5s;
+  transition        : all .5s;
+  background-color  : transparent;
+  border            : 0;
+  cursor            : pointer;
+
+  &:hover {
+    background-color: $colorText1;
+    text-decoration : none;
+    outline         : none;
+    color           : $colorText1;
+  }
+}
+
 //header
 
 header {
@@ -59,6 +83,8 @@ nav {
   z-index    : 10;
 
   ul {
+    transition: 0.5s;
+
     li {
       margin: 0 10px;
 
@@ -123,6 +149,7 @@ nav {
   .text {
     margin-top  : 10vw;
     padding-left: 50px;
+    max-width   : 400px;
 
     h1 {
       font-size  : 3em;
@@ -172,7 +199,6 @@ nav {
     box-sizing: border-box;
     color     : $colorText0;
     display   : block;
-    height    : 100%;
     margin    : 70px auto;
     padding   : 15px 20px;
     position  : relative;
@@ -252,34 +278,34 @@ nav {
     border : 0;
     padding: 0;
   }
-}
 
-.toolbar__btn {
-  font-size         : 1.5em;
-  font-weight       : normal;
-  text-decoration   : none;
-  cursor            : pointer;
-  display           : inline-block;
-  line-height       : normal;
-  padding           : .5rem 1rem;
-  margin            : 0 1.5rem;
-  height            : auto;
-  border            : none;
-  border-bottom     : 2px solid transparent;
-  border-radius     : 0;
-  vertical-align    : middle;
-  -webkit-appearance: none;
-  color             : $colorText0;
-  background-color  : rgba(0, 0, 0, 0);
+  &__btn {
+    font-size         : 1.5em;
+    font-weight       : normal;
+    text-decoration   : none;
+    cursor            : pointer;
+    display           : inline-block;
+    line-height       : normal;
+    padding           : .5rem 1rem;
+    margin            : 0 1.5rem;
+    height            : auto;
+    border            : none;
+    border-bottom     : 2px solid transparent;
+    border-radius     : 0;
+    vertical-align    : middle;
+    -webkit-appearance: none;
+    color             : $colorText0;
+    background-color  : rgba(0, 0, 0, 0);
 
-  &:focus {
-    outline: none;
-  }
+    &:focus {
+      outline: none;
+    }
 
-  &:hover {
-    text-decoration: none;
-    border-bottom  : 2px solid $colorText1;
-    color          : $colorText1;
+    &:hover {
+      text-decoration: none;
+      border-bottom  : 2px solid $colorText1;
+      color          : $colorText1;
+    }
   }
 }
 
@@ -333,27 +359,15 @@ footer {
 }
 
 #contacts {
-  margin-top     : 5%;
-  position       : relative;
-  z-index        : 1;
-  color          : $colorBg0;
-  display        : flex;
-  justify-content: space-between;
-  text-align     : center;
-
-  div {
-    width: 33.3%;
-  }
+  margin    : 5% auto;
+  position  : relative;
+  z-index   : 1;
+  color     : $colorBg0;
+  text-align: center;
 
   p {
     font-size  : 1.875em;
     font-weight: 300;
-  }
-
-  #socials__footer {
-    img {
-      margin: 0 15px;
-    }
   }
 }
 

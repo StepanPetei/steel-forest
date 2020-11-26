@@ -192,7 +192,7 @@ var slideShow = (function () {
         });
       }
     };
-
+    
     // adding indicators
     _addIndicators();
     // setting up listeners

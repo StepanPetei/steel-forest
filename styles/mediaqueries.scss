@@ -1,9 +1,11 @@
 @media screen and (max-width: 1135px) {
   #lang__socials #lang a#ru {
     color: #231f20;
+
     .active {
       color: #97222e;
     }
+
     &:hover {
       color: #97222e;
     }
@@ -13,10 +15,12 @@
 @media screen and (max-width: 1225px) {
   #lang__socials #lang a#ua {
     color: #231f20;
+
     .active {
       color: #97222e;
     }
-     &:hover {
+
+    &:hover {
       color: #97222e;
     }
   }
@@ -44,9 +48,7 @@
 }
 
 // Bootstrap breakpoint for tablets in album orientation
-@media screen and (min-width: 992px) {}
-
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 992px) {
   .navbar-nav {
     align-items: center;
   }
@@ -60,13 +62,247 @@
       display: none;
     }
   }
+
+  .hero {
+    .text {
+      margin       : 3vh auto 0;
+      min-width    : 500px;
+      padding-left : 15px;
+      padding-right: 15px;
+    }
+  }
+
+  .slider__control,
+  .slider__indicators {
+    display: none;
+  }
+
+  .slider__item {
+    img {
+      width : auto;
+      height: 100%;
+    }
+  }
+
+  #contact-us form {
+    margin : 30px 0;
+    height : 40vh !important;
+    padding: 15px 20px;
+
+    input {
+      width: 100%;
+    }
+
+    button {
+      width  : 50%;
+      padding: 7px 20px;
+    }
+  }
+
+  #contacts {
+    flex-direction: column !important;
+  }
+
+  .socials__footer {
+    display       : flex;
+    flex-direction: row;
+  }
 }
 
+// @media screen and (max-width: 992px) {}
+
 // Bootstrap breakpoint for tablets in portrait orientation and fablets in album orientation
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+  .navbar-nav {
+    align-items: center;
+  }
+
+  #lang__socials {
+    #lang {
+      margin: 0 auto;
+    }
+
+    .socials {
+      display: none;
+    }
+  }
+
+  .hero {
+    .text {
+      margin       : 3vh auto 0;
+      padding-left : 15px;
+      padding-right: 15px;
+      text-align   : center;
+    }
+  }
+
+  .container-fluid {
+    padding: 0;
+  }
+
+  .slider__control,
+  .slider__indicators {
+    display: none;
+  }
+
+  .slider__item {
+    img {
+      width : auto;
+      height: 100%;
+    }
+  }
+
+  #contact-us form {
+    margin : 30px 0;
+    height : 40vh !important;
+    padding: 15px 20px;
+
+    input {
+      width: 100%;
+    }
+
+    button {
+      width  : 50%;
+      padding: 7px 20px;
+    }
+  }
+
+  #contacts {
+    flex-direction: column !important;
+  }
+
+  .socials__footer {
+    display       : flex;
+    flex-direction: row;
+  }
+}
 
 // Bootstrap breakpoint for fablets in portrait orientation
-@media screen and (min-width: 576px) {}
+@media screen and (min-width: 576px) {
+  .navbar-nav {
+    align-items: center;
+  }
+
+  #lang__socials {
+    #lang {
+      margin: 0 auto;
+    }
+
+    .socials {
+      display: none;
+    }
+  }
+
+  .hero {
+    .text {
+      margin       : 3vh auto 0;
+      padding-left : 15px;
+      padding-right: 15px;
+      text-align   : center;
+    }
+  }
+
+  .container-fluid {
+    padding: 0;
+  }
+
+  .slider__control,
+  .slider__indicators {
+    display: none;
+  }
+
+  .slider__item {
+    img {
+      width : auto;
+      height: 100%;
+    }
+  }
+
+  #contact-us form {
+    margin : 30px 0;
+    height : 40vh !important;
+    padding: 15px 20px;
+
+    input {
+      width: 100%;
+    }
+
+    button {
+      width  : 50%;
+      padding: 7px 20px;
+    }
+  }
+
+  #contacts {
+    flex-direction: column !important;
+  }
+
+  .socials__footer {
+    display       : flex;
+    flex-direction: row;
+  }
+}
 
 // Bootstrap breakpoint for fablets in portrait orientation
-@media screen and (max-width: 575px) {}
+@media screen and (max-width: 599px) {
+  .navbar-nav {
+    align-items: center;
+  }
+
+  #lang__socials {
+    #lang {
+      margin: 0 auto;
+    }
+
+    .socials {
+      display: none;
+    }
+  }
+
+  .hero {
+    .text {
+      margin-top   : 0;
+      padding-left : 15px;
+      padding-right: 15px;
+      text-align   : center;
+    }
+  }
+
+  .container-fluid {
+    padding: 0;
+  }
+
+  .slider__control,
+  .slider__indicators {
+    display: none;
+  }
+
+  .slider__item {
+    img {
+      width : auto;
+      height: 100%;
+    }
+  }
+
+  #contact-us form {
+    margin : 30px 0;
+    height : 40vh !important;
+    padding: 15px 0;
+
+    input {
+      width: 100%;
+    }
+
+    button {
+      width  : 100%;
+      padding: 7px auto;
+
+    }
+  }
+
+  #contacts {
+    flex-direction: column !important;
+  }
+
+  .socials__footer {}
+}

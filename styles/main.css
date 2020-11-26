@@ -23,6 +23,29 @@ body {
   height: 100%;
 }
 
+.scrollToTop {
+  position: fixed;
+  bottom: 60px;
+  right: 50px;
+  border-radius: 4px;
+  display: block;
+  font-size: 32px;
+  height: 50px;
+  width: 50px;
+  z-index: 100;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+.scrollToTop:hover {
+  background-color: #97222e;
+  text-decoration: none;
+  outline: none;
+  color: #97222e;
+}
+
 header {
   display: block;
   position: relative;
@@ -46,6 +69,9 @@ nav {
   font-size: 1.5em;
   font-weight: 400;
   z-index: 10;
+}
+nav ul {
+  transition: 0.5s;
 }
 nav ul li {
   margin: 0 10px;
@@ -99,6 +125,7 @@ nav ul li a:hover {
 .hero .text {
   margin-top: 10vw;
   padding-left: 50px;
+  max-width: 400px;
 }
 .hero .text h1 {
   font-size: 3em;
@@ -139,7 +166,6 @@ nav ul li a:hover {
   box-sizing: border-box;
   color: #231f20;
   display: block;
-  height: 100%;
   margin: 70px auto;
   padding: 15px 20px;
   position: relative;
@@ -212,7 +238,6 @@ nav ul li a:hover {
   border: 0;
   padding: 0;
 }
-
 .toolbar__btn {
   font-size: 1.5em;
   font-weight: normal;
@@ -283,21 +308,13 @@ footer {
 }
 
 #contacts {
-  margin-top: 5%;
+  margin: 5% auto;
   position: relative;
   z-index: 1;
   color: #e5e5e5;
-  display: flex;
-  justify-content: space-between;
   text-align: center;
-}
-#contacts div {
-  width: 33.3%;
 }
 #contacts p {
   font-size: 1.875em;
   font-weight: 300;
-}
-#contacts #socials__footer img {
-  margin: 0 15px;
 }

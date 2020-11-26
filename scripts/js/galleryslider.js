@@ -1,83 +1,69 @@
 function initSlider() {
-    const slider = document.querySelector('.gallerySlider');
-    const content = slider.querySelector('.content');
-    const slides = slider.querySelectorAll('.slide');
+	const slider = document.querySelector('.gallerySlider');
+	const content = slider.querySelector('.content');
+	const slides = slider.querySelectorAll('.slide');
 
-    let current = 0;
+	let current = 0;
 
-    let touchstartX = 0;
-    let touchendX = 0;
+	let touchstartX = 0;
+	let touchendX = 0;
 
-    function slideTo(index) {
-        console.log('asdas')
-        current = parseInt(index);
+	function slideTo(index) {
+		current = parseInt(index);
 
-        if (current === slides.length) {
-            current = 0;
-        }
+		if (current === slides.length) {
+			current = 0;
+		}
 
-        if (current < 0) {
-            current = slides.length - 1;
-        }
+		if (current < 0) {
+			current = slides.length - 1;
+		}
 
-        //@ts-ignore
-        content.style.transform = `translateX(-${slides[current].offsetLeft}px)`;
-    }
+		//@ts-ignore
+		content.style.transform = `translateX(-${slides[current].offsetLeft}px)`;
+	}
 
-    window.addEventListener('resize', () => {
-        slideTo(current)
-    })
+	window.addEventListener('resize', () => {
+		slideTo(current)
+	})
 
-    content.addEventListener(
-        'touchstart',
-        function (event) {
-            //@ts-ignore
-            touchstartX = event.targetTouches[0].clientX;
-        },
-        false
-    );
+	content.addEventListener(
+		'touchstart',
+		function (event) {
+			touchstartX = event.targetTouches[0].clientX;
+		},
+		false
+	);
 
-    content.addEventListener(
-        'touchend',
-        function (event) {
-            console.log(event.changedTouches[0].clientX)
-            //@ts-ignore
-            touchendX =  event.changedTouches[0].clientX;
-            
-            
-            console.log(touchendX, touchstartX)
+	content.addEventListener(
+		'touchend',
+		function (event) {
+			touchendX = event.changedTouches[0].clientX;
+			handleSwipe();
+		},
+		false
+	);
 
-            handleSwipe();
-        },
-        false
-    );
+	function handleSwipe() {
+		if (touchendX < touchstartX) {
+			slideTo(current + 1);
+		} else if (touchendX > touchstartX) {
+			slideTo(current - 1);
+		}
+	}
 
-    function handleSwipe() {
-        if (touchendX < touchstartX) {
-            slideTo(current + 1);
-        } else if (touchendX > touchstartX) {
-            slideTo(current - 1);
-        }
-    }
-
-
-    // document.querySelector('.next').addEventListener('click', () => {
-
-    // })
-
-    return slideTo;
+	return slideTo;
 }
 
 const slideTo = initSlider();
 
 const indicators = document.querySelectorAll('.indicator').forEach(ind => {
-    ind.addEventListener('click', (e) => {
-        //@ts-ignore
-        const index = e.target.getAttribute('data-index');
+	ind.addEventListener('click', (e) => {
+		//@ts-ignore
+		const index = e.target.getAttribute('data-index');
 
-        slideTo(index);
-    })
-
+		slideTo(index);
+	})
 })
 
-document.querySelector('.indicator').addEventListener('click', () => console.log('asdas'))
+document.querySelector('.indicator').addEventListener('click', () => { })
