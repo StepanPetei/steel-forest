@@ -113,49 +113,68 @@ nav {
   }
 }
 
-// header styles
-.hero {
-  display        : flex;
-  justify-content: space-between;
-  min-height     : 80vh;
-  position       : relative;
-  z-index        : 1;
-  padding        : 50px 0;
-
-  .text {
-    margin-top  : 10vw;
-    padding-left: 50px;
-    max-width   : 400px;
-
-    h1 {
-      font-size  : 3em;
-      font-weight: 400;
-      color      : $colorText0;
-    }
-
-    button {
-      width        : 240px;
-      height       : 60px;
-      border       : none;
-      background   : $colorText1;
-      border-radius: 5px;
-      color        : $colorBg0;
-      font-weight  : lighter;
-      font-size    : 1.5em;
-      margin-top   : 42px;
-      cursor       : pointer;
-
-      a {
-        text-decoration: none;
-        color          : $colorBg0;
-      }
-    }
+// Intro
+.hero{
+  height: 80vh;
+  &__text{
+    padding-left: 3.12vw;
   }
-
-  .comode img {
-    width: 100%;
+  p{
+    font-size: 3vw;
+    font-weight: 400;
+  }
+  &__btn{
+    width: 15vw;
+    text-transform: uppercase;
+    background-color: #97222E;
+    font-size: 1.5vw;
+    font-weight: 300;
   }
 }
+
+// header styles
+// .hero {
+//   display        : flex;
+//   justify-content: space-between;
+//   min-height     : 80vh;
+//   position       : relative;
+//   z-index        : 1;
+//   padding        : 50px 0;
+
+//   .text {
+//     margin-top  : 10vw;
+//     padding-left: 50px;
+//     max-width   : 400px;
+
+//     h1 {
+//       font-size  : 3em;
+//       font-weight: 400;
+//       color      : $colorText0;
+//     }
+
+//     button {
+//       width        : 240px;
+//       height       : 60px;
+//       border       : none;
+//       background   : $colorText1;
+//       border-radius: 5px;
+//       color        : $colorBg0;
+//       font-weight  : lighter;
+//       font-size    : 1.5em;
+//       margin-top   : 42px;
+//       cursor       : pointer;
+
+//       a {
+//         text-decoration: none;
+//         color          : $colorBg0;
+//       }
+//     }
+//   }
+
+//   .comode img {
+//     width: 100%;
+//   }
+// }
 
 //styles for slider in slider.scss
 
