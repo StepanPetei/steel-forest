@@ -1,14 +1,21 @@
+const slider = document.querySelector('.gallerySlider');
+const content = slider.querySelector('.content');
+const slides = slider.querySelectorAll('.slide');
+const indicators = document.querySelectorAll('.indicator');
+
+const activeIndicator = n => {
+	for (indicator of indicators) {
+		indicator.classList.remove("active")
+	}
+	indicators[n].classList.add("active")
+}
 function initSlider() {
-	const slider = document.querySelector('.gallerySlider');
-	const content = slider.querySelector('.content');
-	const slides = slider.querySelectorAll('.slide');
-
-	let current = 0;
-
-	let touchstartX = 0;
-	let touchendX = 0;
+	let current = 0,
+		touchstartX = 0,
+		touchendX = 0;
 
 	function slideTo(index) {
+
 		current = parseInt(index);
 
 		if (current === slides.length) {
@@ -19,8 +26,13 @@ function initSlider() {
 			current = slides.length - 1;
 		}
 
-		//@ts-ignore
 		content.style.transform = `translateX(-${slides[current].offsetLeft}px)`;
+
+		// activeSlide(slides[current])
+	}
+
+	function slideNext() {
+		return slideTo(current + 1)
 	}
 
 	window.addEventListener('resize', () => {
@@ -57,13 +69,11 @@ function initSlider() {
 
 const slideTo = initSlider();
 
-const indicators = document.querySelectorAll('.indicator').forEach(ind => {
+indicators.forEach((ind, indexInd) => {
 	ind.addEventListener('click', (e) => {
-		//@ts-ignore
+		current = indexInd;
+		activeIndicator(current);
 		const index = e.target.getAttribute('data-index');
-
 		slideTo(index);
 	})
 })
-
-document.querySelector('.indicator').addEventListener('click', () => { })

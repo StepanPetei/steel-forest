@@ -2,18 +2,64 @@ $colorText0: #231f20;
 $colorText1: #97222e;
 $colorBg0  : #e5e5e5;
 
+.toolbar {
+	text-align: center;
+	padding   : 10px 0;
+
+	&::-moz-focus-inner {
+		border : 0;
+		padding: 0;
+	}
+
+	&__btn {
+		font-size         : 1.5em;
+		font-weight       : normal;
+		text-decoration   : none;
+		cursor            : pointer;
+		display           : inline-block;
+		line-height       : normal;
+		padding           : .5rem 1rem;
+		margin            : 0 1.5rem;
+		height            : auto;
+		border            : none;
+		border-bottom     : 2px solid transparent;
+		border-radius     : 0;
+		vertical-align    : middle;
+		-webkit-appearance: none;
+		color             : $colorText0;
+		background-color  : rgba(0, 0, 0, 0);
+
+		.active {
+			text-decoration: none;
+			border-bottom  : 2px solid $colorText1;
+			color          : $colorText1;
+		}
+
+		&:focus {
+			outline: none;
+		}
+
+		&:hover {
+			text-decoration: none;
+			border-bottom  : 2px solid $colorText1;
+			color          : $colorText1;
+		}
+	}
+}
+
 .gallerySlider {
-	box-sizing     : border-box;
-	padding        : 0;
-	margin         : 0;
-	transition     : 0.5s;
-	width          : 100vw;
-	display        : flex;
-	align-items    : center;
-	justify-content: center;
-	flex-direction : column;
-	width          : 100%;
-	overflow       : hidden;
+	box-sizing      : border-box;
+	padding         : 0;
+	margin          : 0;
+	transition      : 0.5s;
+	width           : 100vw;
+	display         : flex;
+	align-items     : center;
+	justify-content : center;
+	flex-direction  : column;
+	width           : 100%;
+	overflow        : hidden;
+	background-color: #e5e5e5 !important;
 
 	.content {
 		display        : flex;
@@ -24,7 +70,10 @@ $colorBg0  : #e5e5e5;
 
 		.slide {
 			display              : grid;
+			grid-template-rows   : repeat(2, calc(100% / 2));
 			grid-template-columns: repeat(3, calc(100vw / 3));
+			column-width         : 300px;
+			// height            : min-content;
 
 			.imgContainer {
 				display        : flex;
@@ -42,23 +91,8 @@ $colorBg0  : #e5e5e5;
 	}
 }
 
-
 .controls {
-	margin-top: 40px;
-
-	.prev {
-		width : 40px;
-		height: 40px;
-
-		background: red;
-	}
-
-	.next {
-		width : 40px;
-		height: 40px;
-
-		background: blue;
-	}
+	display: none;
 }
 
 .gallery__slider__indicators {
@@ -87,41 +121,19 @@ $colorBg0  : #e5e5e5;
 	}
 }
 
-.toolbar {
-	text-align: center;
-	padding   : 10px 0;
 
-	&::-moz-focus-inner {
-		border : 0;
-		padding: 0;
-	}
+// @media only screen and (min-width: 568px) and (max-width: 900px) and (-webkit-min-device-pixel-ratio: 3) {
+// 	.slide {
+// 		display              : grid;
+// 		grid-template-rows   : repeat(2, calc(100% / 2));
+// 		grid-template-columns: repeat(2, 50vw);
+// 	}
+// }
 
-	&__btn {
-		font-size         : 1.5em;
-		font-weight       : normal;
-		text-decoration   : none;
-		cursor            : pointer;
-		display           : inline-block;
-		line-height       : normal;
-		padding           : .5rem 1rem;
-		margin            : 0 1.5rem;
-		height            : auto;
-		border            : none;
-		border-bottom     : 2px solid transparent;
-		border-radius     : 0;
-		vertical-align    : middle;
-		-webkit-appearance: none;
-		color             : $colorText0;
-		background-color  : rgba(0, 0, 0, 0);
-
-		&:focus {
-			outline: none;
-		}
-
-		&:hover {
-			text-decoration: none;
-			border-bottom  : 2px solid $colorText1;
-			color          : $colorText1;
-		}
-	}
-}
+// @media only screen and (min-width: 280px) and (max-width: 567px) and (-webkit-min-device-pixel-ratio: 3) {
+// 	.slide {
+// 		display              : grid;
+// 		grid-template-rows   : repeat(2, calc(100% / 2));
+// 		grid-template-columns: 1;
+// 	}
+// }
