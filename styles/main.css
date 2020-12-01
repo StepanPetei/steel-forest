@@ -266,14 +266,10 @@ footer {
   z-index: 0;
 }
 
-#contacts {
-  margin: 5% auto;
-  position: relative;
-  z-index: 1;
+#footer__contacts {
   color: #e5e5e5;
-  text-align: center;
 }
-#contacts p {
+#footer__contacts p {
   font-size: 1.875em;
   font-weight: 300;
 }

@@ -357,12 +357,12 @@ footer {
   z-index : 0;
 }
 
-#contacts {
-  margin    : 5% auto;
-  position  : relative;
-  z-index   : 1;
+#footer__contacts {
+  // margin    : 5% auto;
+  // position  : relative;
+  // z-index   : 1;
   color     : $colorBg0;
-  text-align: center;
+  // text-align: center;
 
   p {
     font-size  : 1.875em;
