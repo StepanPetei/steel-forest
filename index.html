@@ -70,8 +70,18 @@
           </div>
         </div>
       </nav>
+      
+      <div class="hero container-fluid d-flex flex-md-row flex-column">
+        <div class="col-md-4 col-12 d-flex hero__text flex-column justify-content-center align-items-center align-items-md-start">
+          <p>Створюємо комфорт у вашому просторі</p>
+          <button type="button" class="btn hero__btn btn-danger">замовити</button>
+        </div>
+        <div class="col-md-8 col-12 p-0 p-md-3 d-flex flex-row-reverse">
+          <img src="img/comode.png" class="img-fluid" alt="Comode">
+        </div>
+      </div>
 
-      <div class="hero container-fluid">
+      <!-- <div class="hero container-fluid">
         <div class="row">
           <div class="text col-lg-4">
             <h1>Створюємо комфорт у вашому просторі</h1>
@@ -83,7 +93,7 @@
             <img src="../img/comode.png" alt="" />
           </div>
         </div>
-      </div>
+      </div> -->
 
       <div class="slider">
         <div class="slider__wrapper">
@@ -124,7 +134,7 @@
     </header>
 
     <div id="contact-us" class="container-fluid">
-      <div class="row">
+      <div class="col-12 pb-4 pt-4">
         <form
           action="mailto:steelforestworkshop@gmail.com"
           method="post"
@@ -251,9 +261,9 @@
       </div>
     </div>
 
-    <footer class="container-fluid">
+    <footer>
       <img src="./img/footer_bg.svg" alt="" id="footer_bg" />
-      <div class="row">
+      <div class="container-fluid">
         <div id="service" class="row col-12 col-sm-10 col-md-7 mx-auto">
           <div id="delivery" class="col-10 col-lg-6 mx-auto">
             <h3>ДОСТАВКА</h3>
@@ -273,25 +283,21 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-10 mx-auto" id="contacts">
-          <div id="messengers" class="col-12 col-md-4 mx-auto">
-            <img src="./img/telegram.svg" alt="" />
-            <img src="./img/viber.svg" alt="" />
-            <p>
-              +380508119950
-              <br />
-              +380682489617
-            </p>
+      <div id="footer__contacts" class="container-fluid d-flex flex-column flex-md-row align-items-center justify-content-start align-items-md-start justify-content-md-center pt-5 pb-5 pb-md-0">
+        <div class="col-3 d-flex flex-column align-items-center pb-2 pb-md-0">
+          <div class="d-flex flex-row">
+            <img class="pr-1 pl-1" src="img/telegram.svg" alt="">
+            <img class="pr-1 pl-1" src="img/viber.svg" alt="">
           </div>
-          <div id="email" class="col-12 col-md-4 mx-auto">
-            <img src="./img/email.svg" alt="" />
-            <p>steelforestworkshop<br />@gmail.com</p>
-          </div>
-          <div id="socials__footer" class="col-12 col-md-4 mx-auto">
-            <a href="facebook.com"><img src="./img/fb__footer.svg" alt="" /></a>
-            <a href="instagram.com"><img src="./img/inst__footer.svg" alt="" /></a>
-          </div>
+          <p>+380508119950<br>+380682489617</p>
+        </div>
+        <div class="col-3 d-flex flex-column align-items-center pb-2 pb-md-0">
+          <img src="img/email.svg" alt="">
+          <p>steelforestworkshop@gmail.com</p>
+        </div>
+        <div class="col-3 d-flex flex-row justify-content-center">
+          <img class="pr-1 pl-1" src="img/inst__footer.svg" alt="">
+          <img class="pr-1 pl-1" src="img/fb__footer.svg" alt="">
         </div>
       </div>
     </footer>

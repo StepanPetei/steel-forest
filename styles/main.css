@@ -91,42 +91,19 @@ nav ul li a:hover {
   text-decoration: none;
 }
 
-.hero {
-  display: flex;
-  justify-content: space-between;
-  min-height: 80vh;
-  position: relative;
-  z-index: 1;
-  padding: 50px 0;
+.hero__text {
+  padding-left: 3.12vw;
 }
-.hero .text {
-  margin-top: 10vw;
-  padding-left: 50px;
-  max-width: 400px;
-}
-.hero .text h1 {
-  font-size: 3em;
+.hero p {
+  font-size: 3vw;
   font-weight: 400;
-  color: #231f20;
 }
-.hero .text button {
-  width: 240px;
-  height: 60px;
-  border: none;
-  background: #97222e;
-  border-radius: 5px;
-  color: #e5e5e5;
-  font-weight: lighter;
-  font-size: 1.5em;
-  margin-top: 42px;
-  cursor: pointer;
-}
-.hero .text button a {
-  text-decoration: none;
-  color: #e5e5e5;
-}
-.hero .comode img {
-  width: 100%;
+.hero__btn {
+  width: 15vw;
+  text-transform: uppercase;
+  background-color: #97222E;
+  font-size: 1.5vw;
+  font-weight: 300;
 }
 
 #contact-us {
@@ -289,14 +266,12 @@ footer {
   z-index: 0;
 }
 
-#contacts {
-  margin: 5% auto;
-  position: relative;
-  z-index: 1;
+#footer__contacts {
   color: #e5e5e5;
-  text-align: center;
 }
-#contacts p {
+#footer__contacts p {
   font-size: 1.875em;
   font-weight: 300;
 }
+
+/*# sourceMappingURL=main.css.map */
