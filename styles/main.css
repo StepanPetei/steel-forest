@@ -91,9 +91,6 @@ nav ul li a:hover {
   text-decoration: none;
 }
 
-.hero {
-  height: 80vh;
-}
 .hero__text {
   padding-left: 3.12vw;
 }
