@@ -1,7 +1,3 @@
-$colorText0: #231f20;
-$colorText1: #97222e;
-$colorBg0  : #e5e5e5;
-
 // general style for fonts
 :root {
   --ratio  : 1.2;
@@ -17,7 +13,7 @@ $colorBg0  : #e5e5e5;
   margin          : 0;
   padding         : 0;
   list-style      : none;
-  background-color: $colorBg0;
+  background-color: #e5e5e5;
   background      : transparent;
   font-family     : "Oswald", sans-serif;
   scroll-behavior : smooth;
@@ -53,7 +49,7 @@ header {
 
 //navigation styles
 nav {
-  color      : $colorText0;
+  color      : #231f20;
   font-size  : 1.5em;
   font-weight: 400;
   z-index    : 10;
@@ -65,11 +61,11 @@ nav {
       margin: 0 10px;
 
       a {
-        color: $colorText0;
+        color: #231f20;
 
         &:hover {
           text-decoration: none;
-          color          : $colorText1;
+          color          : #97222e;
         }
       }
     }
@@ -133,49 +129,12 @@ nav {
   }
 }
 
-// header styles
-// .hero {
-//   display        : flex;
-//   justify-content: space-between;
-//   min-height     : 80vh;
-//   position       : relative;
-//   z-index        : 1;
-//   padding        : 50px 0;
 
-//   .text {
-//     margin-top  : 10vw;
-//     padding-left: 50px;
-//     max-width   : 400px;
-
-//     h1 {
-//       font-size  : 3em;
-//       font-weight: 400;
-//       color      : $colorText0;
-//     }
-
-//     button {
-//       width        : 240px;
-//       height       : 60px;
-//       border       : none;
-//       background   : $colorText1;
-//       border-radius: 5px;
-//       color        : $colorBg0;
-//       font-weight  : lighter;
-//       font-size    : 1.5em;
-//       margin-top   : 42px;
-//       cursor       : pointer;
-
-//       a {
-//         text-decoration: none;
-//         color          : $colorBg0;
-//       }
-//     }
-//   }
-
-//   .comode img {
-//     width: 100%;
-//   }
-// }
+.img-fluid {
+  display  : inline-block;
+  height   : auto;
+  max-width: 100%;
+}
 
 //styles for slider in slider.scss
 
@@ -193,7 +152,7 @@ nav {
     border    : none;
     box-shadow: 0px 0px 10px 0px #888888;
     box-sizing: border-box;
-    color     : $colorText0;
+    color     : #231f20;
     display   : block;
     margin    : 70px auto;
     padding   : 15px 20px;
@@ -204,16 +163,16 @@ nav {
     h3 {
       font-size  : 1.5em;
       font-weight: 500;
-      color      : $colorText1;
+      color      : #97222e;
     }
 
     input {
       text-align      : left;
       background-color: transparent;
       border-radius   : 2px;
-      border          : 1px solid $colorText0;
+      border          : 1px solid #231f20;
       box-sizing      : border-box;
-      color           : $colorText0;
+      color           : #231f20;
       display         : block;
       font-size       : 1.5em;
       font-weight     : 300;
@@ -228,7 +187,7 @@ nav {
 
     button {
       background-color: #231F20;
-      color           : $colorBg0;
+      color           : #e5e5e5;
       font-size       : 1.5em;
       padding         : 7px 18px;
       border          : none;
@@ -290,13 +249,13 @@ nav {
     border-radius     : 0;
     vertical-align    : middle;
     -webkit-appearance: none;
-    color             : $colorText0;
+    color             : #231f20;
     background-color  : rgba(0, 0, 0, 0);
 
     &.active {
       text-decoration: none;
-      border-bottom  : 2px solid $colorText1;
-      color          : $colorText1;
+      border-bottom  : 2px solid #97222e;
+      color          : #97222e;
     }
 
     &:focus {
@@ -305,8 +264,8 @@ nav {
 
     &:hover {
       text-decoration: none;
-      border-bottom  : 2px solid $colorText1;
-      color          : $colorText1;
+      border-bottom  : 2px solid #97222e;
+      color          : #97222e;
     }
   }
 }
@@ -363,11 +322,11 @@ footer {
 #footer__contacts {
   position     : relative;
   z-index      : 1;
-  color        : $colorBg0;
+  color        : #e5e5e5;
 
   a {
     text-decoration: none;
-    color: $colorBg0;
+    color: #e5e5e5;
   }
 
   p {

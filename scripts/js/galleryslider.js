@@ -31,10 +31,6 @@ function initSlider() {
 		// activeSlide(slides[current])
 	}
 
-	function slideNext() {
-		return slideTo(current + 1)
-	}
-
 	window.addEventListener('resize', () => {
 		slideTo(current)
 	})

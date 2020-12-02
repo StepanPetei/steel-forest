@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* root of slider */
 .slider {
   position: relative;
@@ -5,6 +6,21 @@
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
+}
+
+#info {
+  display: block;
+  position: absolute;
+  z-index: 5;
+  top: 25%;
+  background-color: #e5e5e5;
+  left: 23%;
+  width: 264px;
+  height: 264px;
+  padding: 1.5em;
+}
+#info p {
+  font-size: 1.5em;
 }
 
 /* styles for wrapper */
@@ -124,8 +140,4 @@
 }
 
 /* styles of current slide */
-.img-fluid {
-  display: inline-block;
-  height: auto;
-  max-width: 100%;
-}
+/* стили для индикаторов */
