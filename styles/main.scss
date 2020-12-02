@@ -114,20 +114,22 @@ nav {
 }
 
 // Intro
-.hero{
-  &__text{
+.hero {
+  &__text {
     padding-left: 3.12vw;
   }
-  p{
-    font-size: 3vw;
+
+  p {
+    font-size  : 3vw;
     font-weight: 400;
   }
-  &__btn{
-    width: 15vw;
-    text-transform: uppercase;
+
+  &__btn {
+    width           : 15vw;
+    text-transform  : uppercase;
     background-color: #97222E;
-    font-size: 1.5vw;
-    font-weight: 300;
+    font-size       : 1.5vw;
+    font-weight     : 300;
   }
 }
 
@@ -290,6 +292,7 @@ nav {
     -webkit-appearance: none;
     color             : $colorText0;
     background-color  : rgba(0, 0, 0, 0);
+
     &.active {
       text-decoration: none;
       border-bottom  : 2px solid $colorText1;
@@ -316,7 +319,7 @@ footer {
 }
 
 #service {
-  margin-top      : 10%;
+  margin-top      : 5%;
   position        : relative;
   z-index         : 1;
   height          : auto;
@@ -348,25 +351,32 @@ footer {
   object-fit: cover;
   width     : 100%;
   height    : 100%;
-  min-height: 100vh;
+  min-height: 30%;
   overflow  : hidden;
 
   position: absolute;
-  top     : 0;
+  top     : 20%;
   left    : 0;
   z-index : 0;
 }
 
 #footer__contacts {
-  // margin    : 5% auto;
-  // position  : relative;
-  // z-index   : 1;
-  color     : $colorBg0;
-  // text-align: center;
+  position     : relative;
+  z-index      : 1;
+  color        : $colorBg0;
+
+  a {
+    text-decoration: none;
+    color: $colorBg0;
+  }
 
   p {
     font-size  : 1.875em;
     font-weight: 300;
+  }
+
+  #email {
+    hyphens: manual;
   }
 }
 

@@ -60,11 +60,17 @@
     align-items: center;
   }
 
-  .md-display-none {
+  .hero__text p {
+    font-size: 2.5em !important;
+  }
+  .hero__btn {
+    width: 50%;
+    font-size: 1.5em;
+  }
+  .hero .md-display-none {
     display: none !important;
   }
-
-  .gallerySlider .content .slide {
+  .hero .gallerySlider .content .slide {
     display: grid;
     grid-template-columns: repeat(2, 50vw) !important;
   }
@@ -185,6 +191,9 @@
     padding-right: 15px;
     text-align: center;
   }
+  .hero p {
+    font-size: 2em;
+  }
 
   .container-fluid {
     padding: 0;
@@ -213,11 +222,19 @@
     padding: 7px auto;
   }
 
+  #service {
+    margin-top: 0;
+  }
+
   #contacts {
     flex-direction: column !important;
   }
 }
 @media screen and (max-width: 480px) {
+  .btn {
+    width: 75%;
+  }
+
   .sm-display-none {
     display: none !important;
   }

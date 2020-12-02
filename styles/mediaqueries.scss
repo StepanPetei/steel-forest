@@ -1,34 +1,3 @@
-// @media screen and (max-width: 1135px) {
-//   #lang__socials #lang a#ru {
-//     color: #231f20;
-
-//     .active {
-//       color: #97222e;
-//     }
-
-//     &:hover {
-//       color: #97222e;
-//     }
-//   }
-// }
-
-// @media screen and (max-width: 1225px) {
-//   #lang__socials #lang a#ua {
-//     color: #231f20;
-
-//     .active {
-//       color: #97222e;
-//     }
-
-//     &:hover {
-//       color: #97222e;
-//     }
-//   }
-// }
-
-// Bootstrap breakpoint for PC
-@media screen and (min-width: 1200px) {}
-
 @media screen and (max-width: 1040px) {
 
   nav {
@@ -113,13 +82,24 @@
     align-items: center;
   }
 
-  .md-display-none {
-    display: none !important;
-  }
+  .hero {
+    &__text p {
+      font-size: 2.5em !important;
+    }
 
-  .gallerySlider .content .slide {
-    display              : grid;
-    grid-template-columns: repeat(2, 50vw) !important;
+    &__btn {
+      width    : 50%;
+      font-size: 1.5em;
+    }
+
+    .md-display-none {
+      display: none !important;
+    }
+
+    .gallerySlider .content .slide {
+      display              : grid;
+      grid-template-columns: repeat(2, 50vw) !important;
+    }
   }
 }
 
@@ -138,8 +118,8 @@
 
   .hero {
     .text {
-      padding-left    : 15px;
-      padding-right   : 15px;
+      padding-left : 15px;
+      padding-right: 15px;
     }
   }
 
@@ -270,6 +250,10 @@
       padding-right: 15px;
       text-align   : center;
     }
+
+    p {
+      font-size: 2em;
+    }
   }
 
   .container-fluid {
@@ -304,35 +288,24 @@
     }
   }
 
+  #service {
+    margin-top  : 0;
+    // #delivery {
+    //   padding: 0;
+    // }
+  }
+
   #contacts {
     flex-direction: column !important;
   }
 }
 
 @media screen and (max-width: 480px) {
-  // .gallerySlider .content .slide {
-  //   display              : grid;
-  //   grid-template-columns: 1;
-  //   // grid-template-rows   : repeat(2, 50vw);
-  // }
+  .btn {
+    width: 75%;
+  }
 
   .sm-display-none {
     display: none !important;
   }
 }
-
-// @media only screen and (min-width: 568px) and (max-width: 900px) and (-webkit-min-device-pixel-ratio: 3) {
-// 	.slide {
-// 		display              : grid;
-// 		grid-template-rows   : repeat(2, calc(100% / 2));
-// 		grid-template-columns: repeat(2, 50vw);
-// 	}
-// }
-
-// @media only screen and (min-width: 280px) and (max-width: 567px) and (-webkit-min-device-pixel-ratio: 3) {
-// 	.slide {
-// 		display              : grid;
-// 		grid-template-rows   : repeat(2, calc(100% / 2));
-// 		grid-template-columns: 1;
-// 	}
-// }

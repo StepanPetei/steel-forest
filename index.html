@@ -1,23 +1,14 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta charset="utf-8" />
     <title>Steel Forest Workshop</title>
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
-      crossorigin="anonymous"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="./styles/slider.css" />
     <link rel="stylesheet" href="./styles/galleryslider.css" />
@@ -29,15 +20,8 @@
       <img id="bg" src="../img/bg.svg" alt="" />
       <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
         <a class="navbar-brand" href="#"><img src="./img/logo.svg" alt="" /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -61,39 +45,24 @@
               <a href="#" id="ua" class="active">UA</a>
               <a href="/ru/index.html" id="ru">RU</a>
             </div>
-            <a href="facebook.com" class="socials"
-              ><img src="./img/fb.svg" alt=""
-            /></a>
-            <a href="instagram.com" class="socials"
-              ><img src="./img/inst.svg" alt=""
-            /></a>
+            <a href="facebook.com" class="socials"><img src="./img/fb.svg" alt="" /></a>
+            <a href="instagram.com" class="socials"><img src="./img/inst.svg" alt="" /></a>
           </div>
         </div>
       </nav>
-      
+
       <div class="hero container-fluid d-flex flex-md-row flex-column">
-        <div class="col-md-4 col-12 d-flex hero__text flex-column justify-content-center align-items-center align-items-md-start">
+        <div
+          class="col-md-4 col-12 d-flex hero__text flex-column justify-content-center align-items-center align-items-md-start text-center">
           <p>Створюємо комфорт у вашому просторі</p>
-          <button type="button" class="btn hero__btn btn-danger">замовити</button>
+          <button type="button" class="btn hero__btn btn-danger">
+            замовити
+          </button>
         </div>
         <div class="col-md-8 col-12 p-0 p-md-3 d-flex flex-row-reverse">
-          <img src="img/comode.png" class="img-fluid" alt="Comode">
+          <img src="img/comode.png" class="img-fluid" alt="Comode" />
         </div>
       </div>
-
-      <!-- <div class="hero container-fluid">
-        <div class="row">
-          <div class="text col-lg-4">
-            <h1>Створюємо комфорт у вашому просторі</h1>
-            <button class="col-xl-12">
-              <a href="#contact-us">ЗАМОВИТИ</a>
-            </button>
-          </div>
-          <div class="comode col-lg-8">
-            <img src="../img/comode.png" alt="" />
-          </div>
-        </div>
-      </div> -->
 
       <div class="slider">
         <div class="slider__wrapper">
@@ -120,27 +89,15 @@
             </div>
           </div>
         </div>
-        <a
-          class="slider__control slider__control_prev"
-          href="#"
-          role="button"
-        ></a>
-        <a
-          class="slider__control slider__control_next"
-          href="#"
-          role="button"
-        ></a>
+        <a class="slider__control slider__control_prev" href="#" role="button"></a>
+        <a class="slider__control slider__control_next" href="#" role="button"></a>
       </div>
     </header>
 
     <div id="contact-us" class="container-fluid">
       <div class="col-12 pb-4 pt-4">
-        <form
-          action="mailto:steelforestworkshop@gmail.com"
-          method="post"
-          enctype="text/plain"
-          class="col-12 col-sm-8 col-lg-6 col-xl-5 d-flex flex-column justify-content-center align-content-center justify-content-around mx-auto"
-        >
+        <form action="/scripts/php/mail.php" method="post" enctype="text/plain"
+          class="col-12 col-sm-8 col-lg-6 col-xl-5 d-flex flex-column justify-content-center align-content-center justify-content-around mx-auto">
           <h3>Зв'язатися з нами</h3>
           <input type="text" name="name" placeholder="Ваше ім'я" />
           <input type="text" name="phone" placeholder="Ваш телефон" />
@@ -263,9 +220,9 @@
 
     <footer>
       <img src="./img/footer_bg.svg" alt="" id="footer_bg" />
-      <div class="container-fluid">
+      <div class="container-fluid py-5">
         <div id="service" class="row col-12 col-sm-10 col-md-7 mx-auto">
-          <div id="delivery" class="col-10 col-lg-6 mx-auto">
+          <div id="delivery" class="col-10 col-lg-6 mx-auto px-sm-0">
             <h3>ДОСТАВКА</h3>
             <p>
               Ми надаємо перевагу компанії «Нова пошта» за швидкість та
@@ -283,41 +240,38 @@
           </div>
         </div>
       </div>
-      <div id="footer__contacts" class="container-fluid d-flex flex-column flex-md-row align-items-center justify-content-start align-items-md-start justify-content-md-center pt-5 pb-5 pb-md-0">
-        <div class="col-3 d-flex flex-column align-items-center pb-2 pb-md-0">
+      <div id="footer__contacts"
+        class="container-fluid d-flex flex-column flex-md-row align-items-center justify-content-start align-items-md-start justify-content-md-center py-5 pb-md-0">
+        <div class="col-12 col-md-3 col-lg-2 d-flex flex-column align-items-center pb-2 pb-md-0">
           <div class="d-flex flex-row">
-            <img class="pr-1 pl-1" src="img/telegram.svg" alt="">
-            <img class="pr-1 pl-1" src="img/viber.svg" alt="">
+            <a href="tg://resolve?domain=steel_forest"><img class="pr-1 pl-1" src="img/telegram.svg" alt="" /></a>
+            <a href="viber://chat?number=%2B380508119950"><img class="pr-1 pl-1" src="img/viber.svg" alt="" /></a>
           </div>
-          <p>+380508119950<br>+380682489617</p>
+          <p><a href="tel:+380508119950">+380508119950</a><br /><a href="tel:+380682489617">+380682489617</a></p>
+        </div> 
+        <div class="col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center pb-2 pb-md-0 text-center" id="email">
+          <img src="img/email.svg" alt="" />
+          <p>steelforestworkshop<wbr />@gmail.com</p>
         </div>
-        <div class="col-3 d-flex flex-column align-items-center pb-2 pb-md-0">
-          <img src="img/email.svg" alt="">
-          <p>steelforestworkshop@gmail.com</p>
-        </div>
-        <div class="col-3 d-flex flex-row justify-content-center">
-          <img class="pr-1 pl-1" src="img/inst__footer.svg" alt="">
-          <img class="pr-1 pl-1" src="img/fb__footer.svg" alt="">
+        <div class="col-12 col-md-3 col-lg-2 d-flex flex-row justify-content-center">
+          <a href="https://www.facebook.com/Steel-forest-corp-103002807788100/" target="_blank"><img class="pr-3 pl-1" src="img/fb__footer.svg" alt="" /></a>
+          <a href="https://www.instagram.com/steel.forest/" target="_blank"><img class="pr-1 pl-3" src="img/inst__footer.svg" alt="" /></a>
         </div>
       </div>
     </footer>
 
+    <script src="/scripts/js/mail.js"></script>
     <script src="scripts/js/slider.js"></script>
     <script src="scripts/js/galleryslider.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
       integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
       integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
   </body>
+
 </html>
