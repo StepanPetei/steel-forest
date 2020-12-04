@@ -222,7 +222,7 @@
   #contact-us form {
     margin: 30px 0;
     height: 40vh !important;
-    padding: 15px 0;
+    padding: 15px;
   }
   #contact-us form input {
     width: 100%;
