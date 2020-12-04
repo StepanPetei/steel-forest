@@ -74,6 +74,10 @@
   }
 }
 @media screen and (max-width: 767px) {
+  #scroller {
+    display: none !important;
+  }
+
   .navbar-nav {
     align-items: center;
   }
