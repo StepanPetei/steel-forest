@@ -13,11 +13,11 @@ var slideShow = (function () {
       _indicatorItems,
       _indicatorIndex = 0,
       _indicatorIndexMax = _sliderItems.length - 1,
-      _stepTouch = 50,
+      _stepTouch = 100,
       _config = {
         isAutoplay: false,
         directionAutoplay: "next",
-        delayAutoplay: 5000,
+        delayAutoplay: 4000,
         isPauseOnHover: true,
       };
 
@@ -192,7 +192,7 @@ var slideShow = (function () {
         });
       }
     };
-    
+
     // adding indicators
     _addIndicators();
     // setting up listeners
