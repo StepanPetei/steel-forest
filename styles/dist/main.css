@@ -1,3 +1,8 @@
+@import url("/styles/dist/slick.css");
+@import url("/styles/dist/slick-theme.css");
+@import url("/styles/dist/slick-style.css");
+@import url("/styles/dist/galleryslider.css");
+@import url("/styles/dist/mediaqueries.css");
 :root {
   --ratio: 1.2;
   --ms0: 1;
@@ -58,8 +63,15 @@ nav {
   font-weight: 400;
   z-index: 10;
 }
-nav ul {
-  transition: 0.5s;
+nav ul ::after {
+  content: "";
+  display: block;
+  transform: scaleY(0);
+  transition: all 0.5s;
+  height: 1px;
+}
+nav ul ::after:focus {
+  transform: scaleY(1);
 }
 nav ul li {
   margin: 0 10px;

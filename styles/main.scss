@@ -1,3 +1,10 @@
+// @import url("/styles/dist/slider.css");
+@import url("/styles/dist/slick.css");
+@import url("/styles/dist/slick-theme.css");
+@import url("/styles/dist/slick-style.css");
+@import url("/styles/dist/galleryslider.css");
+@import url("/styles/dist/mediaqueries.css");
+
 // general style for fonts
 :root {
   --ratio  : 1.2;
@@ -26,11 +33,12 @@ body {
 
 #scroller {
   position: fixed;
-  bottom: 1%;
-  right: 1%;
-  z-index: 100;
-  border: none;
-  &:focus{
+  bottom  : 1%;
+  right   : 1%;
+  z-index : 100;
+  border  : none;
+
+  &:focus {
     outline: none;
   }
 }
@@ -66,7 +74,17 @@ nav {
   z-index    : 10;
 
   ul {
-    transition: 0.5s;
+    ::after {
+      content   : '';
+      display   : block;
+      transform : scaleY(0);
+      transition: all 0.5s;
+      height    : 1px;
+
+      &:focus {
+        transform: scaleY(1);
+      }
+    }
 
     li {
       margin: 0 10px;
@@ -205,7 +223,7 @@ nav {
       background-color: #231F20;
       color           : #e5e5e5;
       font-size       : 1.5em;
-      margin: auto;
+      margin          : auto;
       padding         : 7px 18px;
       border          : none;
       border-radius   : 5px;
