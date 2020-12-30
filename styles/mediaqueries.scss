@@ -51,7 +51,7 @@
 
   #contact-us form {
     margin : 30px 0;
-    height : 40vh !important;
+    height : 35vh !important;
     padding: 15px 20px;
 
     input {
@@ -75,15 +75,21 @@
 }
 
 @media screen and (max-width: 992px) {
+  .navbar-toggler {
+    background-color: #e5e5e5;
+    opacity         : 0.2;
+    border-radius   : 5px;
+  }
+
   .hero {
     &__text p {
       font-size: 2.5em !important;
     }
 
     &__btn {
-      width    : auto;
-      min-width: 50%;
-      font-size: 1.5em;
+      width    : auto !important;
+      min-width: 75%;
+      font-size: 1.5em !important;
     }
   }
 
@@ -98,11 +104,30 @@
 }
 
 @media screen and (max-width: 767px) {
+  .navbar-toggler {
+    background-color: transparent;
+  }
+
   #scroller {
     display: none !important;
   }
+
   .navbar-nav {
     align-items: center;
+  }
+
+  .hero {
+    &__text {
+      margin: 3rem 0;
+    }
+
+    &__btn {
+      width: 50%;
+    }
+  }
+
+  .img-fluid {
+    margin-bottom: 3rem;
   }
 
   .md-display-none {
@@ -152,7 +177,7 @@
 
   #contact-us form {
     margin : 30px 0;
-    height : 40vh !important;
+    height : 35vh !important;
     padding: 15px 20px;
 
     input {
@@ -214,7 +239,7 @@
 
   #contact-us form {
     margin : 30px 0;
-    height : 40vh !important;
+    height : 35vh !important;
     padding: 15px 20px;
 
     input {
@@ -292,8 +317,8 @@
     }
 
     button {
-      width  : 100%;
-      padding: 7px auto;
+      width  : 100% !important;
+      padding: 7px auto !important;
     }
   }
 
@@ -330,5 +355,12 @@
   .gallerySlider .content .slide {
     display              : grid;
     grid-template-columns: 100vw !important;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  a.navbar-brand {
+    width : 60%;
+    height: 60%;
   }
 }

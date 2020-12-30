@@ -1,17 +1,10 @@
 @charset "UTF-8";
 /* Slider */
-.slick-loading .slick-list {
-  background: #fff url("./ajax-loader.gif") center center no-repeat;
-}
-
 /* Icons */
 @font-face {
   font-family: "slick";
   src: url("../../fonts/slick.eot");
-  src: url("../fonts/slick.eot?#iefix") format("embedded-opentype"),
-    url("../../fonts/slick.woff") format("woff"),
-    url("../fonts/slick.ttf") format("truetype"),
-    url("../fonts/slick.svg#slick") format("svg");
+  src: url("../../fonts/slick.eot?#iefix") format("embedded-opentype"), url("../../fonts/slick.woff") format("woff"), url("../../fonts/slick.ttf") format("truetype"), url("../../fonts/slick.svg#slick") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -35,16 +28,14 @@
   border: none;
   outline: none;
 }
-.slick-prev:hover,
-.slick-prev:focus,
+.slick-prev:hover, .slick-prev:focus,
 .slick-next:hover,
 .slick-next:focus {
   outline: none;
   background: transparent;
   color: transparent;
 }
-.slick-prev:hover:before,
-.slick-prev:focus:before,
+.slick-prev:hover:before, .slick-prev:focus:before,
 .slick-next:hover:before,
 .slick-next:focus:before {
   opacity: 1;
@@ -67,28 +58,28 @@
 .slick-prev {
   left: -25px;
 }
-[dir="rtl"] .slick-prev {
+[dir=rtl] .slick-prev {
   left: auto;
   right: -25px;
 }
 .slick-prev:before {
   content: "←";
 }
-[dir="rtl"] .slick-prev:before {
+[dir=rtl] .slick-prev:before {
   content: "→";
 }
 
 .slick-next {
   right: -25px;
 }
-[dir="rtl"] .slick-next {
+[dir=rtl] .slick-next {
   left: -25px;
   right: auto;
 }
 .slick-next:before {
   content: "→";
 }
-[dir="rtl"] .slick-next:before {
+[dir=rtl] .slick-next:before {
   content: "←";
 }
 
@@ -129,12 +120,10 @@
   padding: 5px;
   cursor: pointer;
 }
-.slick-dots li button:hover,
-.slick-dots li button:focus {
+.slick-dots li button:hover, .slick-dots li button:focus {
   outline: none;
 }
-.slick-dots li button:hover:before,
-.slick-dots li button:focus:before {
+.slick-dots li button:hover:before, .slick-dots li button:focus:before {
   opacity: 1;
 }
 .slick-dots li button:before {

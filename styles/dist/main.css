@@ -84,6 +84,10 @@ nav ul li a:hover {
   color: #97222e;
 }
 
+.navbar-collapse {
+  transition: all 0.5s;
+}
+
 #lang__socials {
   display: flex;
   flex-direction: row;
@@ -93,7 +97,6 @@ nav ul li a:hover {
   display: flex;
   flex-direction: row;
   margin: auto;
-  margin-right: 40px;
 }
 #lang__socials #lang .active {
   color: #97222e;
@@ -137,7 +140,7 @@ nav ul li a:hover {
 
 #contact-us {
   position: relative;
-  z-index: 0;
+  z-index: 1;
   padding: 0px auto !important;
   background-color: #e5e5e5 !important;
 }
@@ -145,7 +148,7 @@ nav ul li a:hover {
   margin: auto 0 !important;
 }
 #contact-us form {
-  height: 40vh !important;
+  height: 40vh;
   text-align: center;
   border: none;
   box-shadow: 0px 0px 10px 0px #888888;
@@ -156,7 +159,6 @@ nav ul li a:hover {
   padding: 15px 20px;
   position: relative;
   width: 40%;
-  z-index: 2;
 }
 #contact-us form h3 {
   font-size: 1.5em;
@@ -295,7 +297,7 @@ footer {
   min-height: 30%;
   overflow: hidden;
   position: absolute;
-  top: 20%;
+  top: 0;
   left: 0;
   z-index: 0;
 }
