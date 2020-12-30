@@ -3,7 +3,6 @@
 @import url("/styles/dist/slick-theme.css");
 @import url("/styles/dist/slick-style.css");
 @import url("/styles/dist/galleryslider.css");
-@import url("/styles/dist/mediaqueries.css");
 
 * {
   margin          : 0;
@@ -347,3 +346,4 @@ footer {
 }
 
 // mediaqueries for layout adapting in mediaqueries.scss
+@import url("/styles/dist/mediaqueries.css");
