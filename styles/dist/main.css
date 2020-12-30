@@ -3,16 +3,6 @@
 @import url("/styles/dist/slick-style.css");
 @import url("/styles/dist/galleryslider.css");
 @import url("/styles/dist/mediaqueries.css");
-:root {
-  --ratio: 1.2;
-  --ms0: 1;
-  --ms1: var(--ratio);
-  /* 1.2   */
-  --ms2: calc(var(--ratio) * var(--ms1));
-  /* 1.44  */
-  font-size: 16px;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -88,40 +78,25 @@ nav ul li a:hover {
   transition: all 0.5s;
 }
 
-#lang__socials {
+#lang {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
 }
-#lang__socials #lang {
-  display: flex;
-  flex-direction: row;
-  margin: auto;
-}
-#lang__socials #lang .active {
+#lang .active {
   color: #97222e;
 }
-#lang__socials #lang a {
+#lang a {
+  text-decoration: none;
   color: #c9c8c8;
   margin: 0 10px;
-}
-#lang__socials #lang a:hover {
-  color: #97222e;
-}
-#lang__socials .socials {
-  display: flex;
-  justify-content: space-between;
-  margin: 10px;
-}
-#lang__socials a {
-  text-decoration: none;
 }
 
 .hero__text {
   padding-left: 3.12vw;
 }
-.hero p {
-  font-size: 3vw;
+.hero h1 {
+  font-size: 3rem;
   font-weight: 400;
 }
 .hero__btn {
@@ -149,6 +124,7 @@ nav ul li a:hover {
 }
 #contact-us form {
   height: 40vh;
+  min-height: 386px !important;
   text-align: center;
   border: none;
   box-shadow: 0px 0px 10px 0px #888888;

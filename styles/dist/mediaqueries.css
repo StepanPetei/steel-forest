@@ -2,10 +2,6 @@
   nav ul li {
     margin: 0 5px;
   }
-
-  #lang__socials #lang {
-    margin-right: 20px;
-  }
 }
 @media screen and (min-width: 992px) {
   .navbar-nav {
@@ -34,7 +30,6 @@
 
   #contact-us form {
     margin: 30px 0;
-    height: 35vh !important;
     padding: 15px 20px;
   }
   #contact-us form input {
@@ -95,6 +90,9 @@
   .hero__text {
     margin: 3rem 0;
   }
+  .hero h1 {
+    font-size: 2rem;
+  }
   .hero__btn {
     width: 50%;
   }
@@ -129,10 +127,6 @@
     padding: 0;
   }
 
-  .slider__indicators {
-    display: none;
-  }
-
   .slider__item img {
     width: auto;
     height: 100%;
@@ -140,7 +134,6 @@
 
   #contact-us form {
     margin: 30px 0;
-    height: 35vh !important;
     padding: 15px 20px;
   }
   #contact-us form input {
@@ -177,10 +170,6 @@
     padding: 0;
   }
 
-  .slider__indicators {
-    display: none;
-  }
-
   .slider__item img {
     width: auto;
     height: 100%;
@@ -188,7 +177,6 @@
 
   #contact-us form {
     margin: 30px 0;
-    height: 35vh !important;
     padding: 15px 20px;
   }
   #contact-us form input {
@@ -234,11 +222,6 @@
     padding: 0;
   }
 
-  .slider__control,
-.slider__indicators {
-    display: none;
-  }
-
   .slider__item img {
     width: auto;
     height: 100%;
@@ -246,7 +229,6 @@
 
   #contact-us form {
     margin: 30px 0;
-    height: 40vh !important;
     padding: 15px;
   }
   #contact-us form input {

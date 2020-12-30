@@ -5,17 +5,6 @@
 @import url("/styles/dist/galleryslider.css");
 @import url("/styles/dist/mediaqueries.css");
 
-// general style for fonts
-:root {
-  --ratio  : 1.2;
-  --ms0    : 1;
-  --ms1    : var(--ratio);
-  /* 1.2   */
-  --ms2    : calc(var(--ratio) * var(--ms1));
-  /* 1.44  */
-  font-size: 16px;
-}
-
 * {
   margin          : 0;
   padding         : 0;
@@ -105,39 +94,19 @@ nav {
   transition: all 0.5s;
 }
 
-#lang__socials {
+#lang {
   display        : flex;
   flex-direction : row;
-  justify-content: space-between;
+  justify-content: center;
 
-  #lang {
-    display       : flex;
-    flex-direction: row;
-    margin        : auto;
-
-    .active {
-      color: #97222e;
-    }
-
-    a {
-      color : #c9c8c8;
-      margin: 0 10px;
-
-      &:hover {
-        color: #97222e;
-      }
-    }
-  }
-
-
-  .socials {
-    display        : flex;
-    justify-content: space-between;
-    margin         : 10px;
+  .active {
+    color: #97222e;
   }
 
   a {
     text-decoration: none;
+    color          : #c9c8c8;
+    margin         : 0 10px;
   }
 }
 
@@ -147,8 +116,8 @@ nav {
     padding-left: 3.12vw;
   }
 
-  p {
-    font-size  : 3vw;
+  h1 {
+    font-size  : 3rem;
     font-weight: 400;
   }
 
@@ -184,6 +153,7 @@ nav {
 
   form {
     height    : 40vh;
+    min-height: 386px !important;
     text-align: center;
     border    : none;
     box-shadow: 0px 0px 10px 0px #888888;
