@@ -22,7 +22,7 @@
 
   .hero {
     .text {
-      margin-left     : 2vw;
+      margin-left: 2vw;
     }
   }
 
@@ -69,7 +69,7 @@
   }
 
   .hero {
-    &__text p {
+    &__text h1 {
       font-size: 2.5em !important;
     }
 
@@ -163,8 +163,8 @@
   }
 
   #contact-us form {
-    margin    : 30px 0;
-    padding   : 15px 20px;
+    margin : 30px 0;
+    padding: 15px 20px;
 
     input {
       width: 100%;
@@ -201,8 +201,8 @@
 
   .hero {
     .text {
-      padding-left    : 15px;
-      padding-right   : 15px;
+      padding-left : 15px;
+      padding-right: 15px;
     }
   }
 
@@ -218,8 +218,8 @@
   }
 
   #contact-us form {
-    margin    : 30px 0;
-    padding   : 15px 20px;
+    margin : 30px 0;
+    padding: 15px 20px;
 
     input {
       width: 100%;
